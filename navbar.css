@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ramabhadra&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Poppins, sans-serif;
+    background:#EAEAEA;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 120px;
+    z-index: 999;
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.brand-logo{
+    width:70px;
+}
+
+.logo-main{
+    font-size:28px;
+    font-weight:600;
+    font-style:italic;
+}
+
+.logo-sub{
+    font-size:20px;
+    font-weight:600;
+    font-style:italic;
+}
+
+.menu a{
+    font-size:20px;
+    margin:0 15px;
+    text-decoration:none;
+    color:black;
+    font-weight:500;
+}
+
+.menu .active{
+    font-weight:800;
+}
+
+.btn-admin{
+    position: relative;
+    background:black;
+    color:white;
+    padding:12px 30px;
+    border-radius:30px;
+    font-weight:700;
+    border:none;
+    cursor: pointer;
+}

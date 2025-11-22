@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Apparel - Sportswear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<header class="navbar">
+     <div class="logo-container">
+        <img src="asset/logo.png" alt="Logo" class="brand-logo"> 
+        <div class="logo-text">
+            <span class="logo-main">C02Y</span><br>
+            <span class="logo-sub">APPAREL</span>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <a href="#" class="active">Home</a>
+        <a href="aboutus/aboutus.html">About Us</a>
+        <a href="catalog/catalog.html">Catalog</a>
+        <a href="detail/detail.html">Details</a>
+    </nav>
+
+    <button class="btn-admin" onclick="location.href='#cta'">Hubungi Admin</button>
+</header>
+
+<section class="hero">
+    <img src="asset/hero.png" class="hero-image fade-up" alt="Jersey Image">
+
+    <h1 class="title">SPORTSWEAR</h1>
+
+    <div class="quality-box">
+        <div class="quality-inner">
+            <p class="q-main">100%</p>
+            <p class="q-sub">High Quality <br> Apparel</p>
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <h2>Jersey Custom</h2>
+        <p>Buat jersey dengan desain modern, material nyaman, dan kualitas</p>
+        <p>terbaik untuk kebutuhan olahraga atau tim Anda.</p>
+
+        <div class="hero-buttons fade-up">
+            <button class="btn-order" onclick="location.href='#cta'">Order Now</button>
+            <div class="btn-catalog">
+                <span>Catalog</span>
+                <img src="asset/btn-catalog.png" alt="">
+            </div>
+        </div>
+
+        <!-- SUB HERO LAYOUT FIXED -->
+        <div class="hero-sub">
+            <p class="desc">
+                Temukan koleksi jersey dengan teknologi terbaik, siap mendukung setiap performa di lapangan. 
+                Lebih dari desain. Ini keunggulan.<br>Gunakan sekarang!
+            </p>
+
+            <div class="new-collection-wrapper fade-up">
+                <div class="new-collection-box"></div>
+                <h3 class="new-collection-text">NEW <br> COLLECTION</h3>
+                <img src="asset/sub-hero.png" class="collection-img fade-up" alt="New Collection">
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll">
+        <div class="scroll-icon">
+            <img src="asset/btn-arrow.png" alt="">
+        </div>
+        <span>Scroll down</span>
+    </div>
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+        <p>
+            Cozy Apparel adalah penyedia jersey custom yang mengutamakan kenyamanan, kualitas, dan desain modern. Kami hadir untuk memenuhi kebutuhan tim olahraga, komunitas, hingga individu yang ingin memiliki jersey dengan tampilan stylish dan material premium. 
+        </p>
+
+        <img src="asset/aboutus.png" alt="About Cozy Apparel">
+    </div>
+</section>
+
+
+</section>
+
+<section class="benefits">
+    <h2 class="benefit-title">Kenapa Harus Pilih Cozy Apparel?</h2>
+    <p class="benefit-subtitle">
+        Beberapa keuntungan yang akan kamu dapatkan jika kamu memesan jersey di Cozy Apparel :
+    </p>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-item">
+            <img src="asset/waktu.png" alt="icon">
+            <h3>Jaminan Tepat Waktu</h3>
+            <p>Kami menjamin semua pesanan selesai tepat waktu sesuai kesepakatan.</p>
+        </div>
+
+        <div class="benefit-item">
+            <img src="asset/terpercaya.png" alt="icon">
+            <h3>Terpercaya</h3>
+            <p>Kami berkomitmen memberikan produk yang asli, aman, dan berkualitas.
+               Kepuasan pelanggan adalah prioritas utama kami.</p>
+        </div>
+
+        <div class="benefit-item">
+            <img src="asset/dompet.png" alt="icon">
+            <h3>Pembayaran Mudah</h3>
+            <p>Pembayaran mudah dan fleksibel—bisa lewat e-wallet, transfer bank, maupun COD.</p>
+        </div>
+
+        <div class="benefit-item">
+            <img src="asset/jempol.png" alt="icon">
+            <h3>Kualitas Terjamin</h3>
+            <p>Setiap produk melalui proses quality control ketat untuk memastikan hasil terbaik dan tahan lama.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="catalog">
+    <h2>Catalog</h2>
+
+    <div class="catalog-grid">
+        <div class="catalog-item">
+            <img src="asset/desain-1.png" alt="Catalog 1">
+        </div>
+
+        <div class="catalog-item">
+            <img src="asset/desain-2.png" alt="Catalog 2">
+        </div>
+
+        <div class="catalog-item">
+            <img src="asset/desain-3.png" alt="Catalog 3">
+        </div>
+    </div>
+
+    <button class="catalog-more" onclick="location.href='catalog/catalog.html'">More</button>
+</section>
+
+<section id="cta" class="cta">
+    <div class="cta-container">
+        <h2>Tunggu Apa Lagi?</h2>
+        <p>Anda bisa langsung menghubungi kami untuk konsultasi gratis melalui WhatsApp atau Instagram.</p>
+
+        <button class="cta-btn" onclick="openContact()">Hubungi Kami</button>
+ 
+        <!-- Popup pilihan kontak -->
+        <div id="contact-options" class="contact-options">
+            <a href="https://wa.me/6281461143729?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda" target="_blank" class="contact-btn wa">WhatsApp Admin 1</a>
+            <a href="https://wa.me/62895602462626?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda" target="_blank" class="contact-btn wa">WhatsApp Admin 2</a>
+            <a href="https://instagram.com/c02y.apparel" target="_blank" class="contact-btn ig">Instagram</a>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-info">
+    <div class="footer-container">
+
+        <!-- KIRI -->
+<div class="footer-left">
+
+    <div class="footer-row">
+        <img src="asset/logo.png" class="footer-logo" alt="Cozy Apparel Logo">
+
+        <div class="footer-title-group">
+            <h3>C02Y</h3>
+            <h3>APPAREL</h3>
+        </div>
+    </div>
+
+    <p class="footer-desc">
+        Setiap detail di C02Y Apparel dirancang untuk memberikan pengalaman berpakaian yang lebih baik.
+    </p>
+
+</div>
+
+
+        <div class="footer-divider"></div>
+
+        <!-- TENGAH -->
+        <div class="footer-center">
+    <div class="footer-item">
+        <img src="asset/ic-lokasi.png" alt="">
+        <p>Kuningan, Jawa Barat, Indonesia</p>
+    </div>
+
+    <div class="footer-item">
+        <img src="asset/ic-ig.png" alt="">
+        <p>@c02y.apparel</p>
+    </div>
+
+    <div class="footer-item">
+        <img src="asset/ic-wa.png" alt="">
+        <div>
+            <p>+62 814-6114-3729</p>
+            <p>+62 895-6024-62626</p>
+        </div>
+    </div>
+</div>
+
+        <div class="footer-divider"></div>
+
+    </div>
+
+</footer>
+    <div class="copyright">
+        © 2024 cozy.apparel. All Rights Reserved.
+    </div>
+</body>
+
+<script>
+    function openContact() {
+        var contactOptions = document.getElementById("contact-options");
+        if (contactOptions.style.display === "block") {
+            contactOptions.style.display = "none";
+        } else {
+            contactOptions.style.display = "block";
+        }
+    }
+</script>
+</html>

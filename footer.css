@@ -1,0 +1,103 @@
+
+.footer-info {
+    width: 100%;
+    background: #F2F0F0;
+    padding: 60px 120px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.1fr 1.2fr 0.1fr 1.2fr;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer-logo {
+    width: 50px;
+}
+
+.footer-title-group {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.footer-title-group h3 {
+    font-size: 27px;
+    font-family: "Reddit Sans";
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1.3px;
+    margin: 0;
+}
+
+.footer-desc {
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    line-height: 23px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    gap: 18px; 
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* jarak ikon dan teks */
+}
+
+.footer-item img {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-item p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-divider {
+    width: 1px;
+    height: 200px;
+    background: #212121;
+}
+
+.footer-btn {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer-btn:hover {
+    text-decoration: underline;
+}
+/* COPYRIGHT TEXT */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    background: #fff;
+}

@@ -1,0 +1,180 @@
+.price-list {
+    background: #EAEAEA;
+    padding: 60px 80px;
+}
+
+.price-list h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.price-row {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.price-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.price-jersey {
+    width: 350px;
+}
+
+/* Pricetag Position */
+.pricetag {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
+.pricetag.right {
+    right: -80px;
+}
+
+.pricetag.left {
+    left: -80px;
+}
+
+.pricetag img {
+    width: 100%;
+}
+
+/* Text Card */
+.price-card {
+    position: relative;
+    z-index: 5;
+    margin-top: 85px;
+    left: 400px;
+    max-width: 600px;
+}
+
+.price-card.left{
+    position: relative;
+    z-index: 5;
+    margin-top: 85px;
+    left: -400px;
+    max-width: 600px;
+}
+
+/* Alignment for left side card */
+.price-row.reverse .price-card {
+    margin-left: -80px;
+    text-align: left;
+}
+
+/* Header style */
+.price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-header h3 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+}
+
+.price-header span {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2.8px;
+}
+
+.price-card ul {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+
+.custom-price h3 {
+    font-size: 25px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.custom-price p {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.size-chart-section {
+    width: 100%;
+    background: white;
+    padding: 60px 120px;
+    position: relative;
+}
+
+.size-chart-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.size-text h2 {
+    font-size: 70px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+
+.size-text .black {
+    color: black;
+}
+
+.size-text .brown {
+    color: rgba(128, 37, 14, 0.94);
+}
+
+.size-text p {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Poppins, sans-serif;
+    letter-spacing: 0.8px;
+}
+
+.collar-section {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.collar-section h2 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.title-underline {
+    width: 110px;
+    height: 5px;
+    background: black;
+    margin: 15px auto 40px auto;
+}
+
+.collar-image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
