@@ -7,6 +7,7 @@
 }
 
 body{
+    padding-top: 110px;
     font-family:Poppins, sans-serif;
     background:#EAEAEA;
     overflow-x:hidden;
@@ -18,13 +19,18 @@ html {
 }
 
 .navbar{
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:25px 120px;
+    padding:20px 120px;
     z-index: 999;
+
+    background: #EAEAEA; /* Biar terlihat ketika scroll */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* shadow */
 }
 
 .logo-container{
