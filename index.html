@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="navbar">
-     <div class="logo-container">
+    <div class="logo-container">
         <img src="asset/logo.png" alt="Logo" class="brand-logo"> 
         <div class="logo-text">
             <span class="logo-main">C02Y</span><br>
@@ -18,15 +18,23 @@
         </div>
     </div>
 
+    <!-- HAMBURGER MENU -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <nav class="menu">
         <a href="#" class="active">Home</a>
         <a href="aboutus/aboutus.html">About Us</a>
         <a href="catalog/catalog.html">Catalog</a>
         <a href="detail/detail.html">Details</a>
+        <button class="btn-admin" onclick="location.href='#cta'">Hubungi Admin</button>
     </nav>
 
-    <button class="btn-admin" onclick="location.href='#cta'">Hubungi Admin</button>
 </header>
+
 
 <section class="hero">
     <img src="asset/hero.png" class="hero-image fade-up" alt="Jersey Image">
@@ -170,7 +178,7 @@
 <div class="footer-left">
 
     <div class="footer-row">
-        <img src="asset/logo.png" class="footer-logo" alt="Cozy Apparel Logo">
+        <img src="asset/f-logo.png" class="footer-logo" alt="Cozy Apparel Logo">
 
         <div class="footer-title-group">
             <h3>C02Y</h3>
@@ -227,5 +235,10 @@
             contactOptions.style.display = "block";
         }
     }
+
+    function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
 </script>
 </html>
