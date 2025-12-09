@@ -35,12 +35,10 @@
     z-index: 2;
 }
 
-
 .about-content {
     width: 100%;
     background: #fff;
     padding: 150px 40px 0 40px;
-
 }
 
 .about-desc {
@@ -87,7 +85,6 @@
     background: white;
 }
 
-
 .gallery-section {
     width: 100%;
     padding: 70px 0;
@@ -125,4 +122,199 @@
     height: 226px;
     border-radius: 20px;
     object-fit: cover;
+}
+
+
+/* =====================================================
+                MOBILE VERSION (≤480px)
+===================================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* ===== HEADER ===== */
+    .about-header {
+        height: 98px;
+        width: 100%;
+        max-width: 390px;
+        margin: auto;
+    }
+
+    .about-header h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .about-bg,
+    .overlay {
+        height: 98px;
+        width: 100%;
+        max-width: 390px;
+        margin: auto;
+    }
+
+    /* ===== CONTENT ===== */
+    .about-content {
+        padding: 100px 20px 0 20px;
+        width: 100%;
+        max-width: 390px;
+        margin: auto;
+    }
+
+    .about-desc {
+        margin-top: -78px;
+        font-size: 11px;
+        line-height: 20px;
+        width: 100%;
+        max-width: 390px;
+        text-align: justify;
+        font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ===== STATS ===== */
+    .about-stats {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        padding: 15px 10px;
+        width: 100%;
+        max-width: 390px;
+        margin-top: 26px;
+        border-radius: 15px;
+    }
+
+    .stat-box {
+        text-align: center;
+        flex: 1;
+    }
+
+    .stat-box h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .stat-box p {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .divider {
+        width: 1px;
+        height: 30px;
+        background: white;
+    }
+
+    /* ===== GALLERY ===== */
+    .gallery-section {
+        width: 100%;
+        max-width: 390px;
+        margin: auto;
+        padding: 30px 0;
+    }
+
+    .gallery-section h2 {
+        font-size: 25px;
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+
+    .gallery-section .underline {
+        width: 50   px;
+        height: 2px;
+        background: black;
+        margin: 10px auto 40px auto;
+    }
+
+    .gallery-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+        max-width: 390px;
+        margin: -6px;
+        padding: 0;
+        background: transparent;
+    }
+
+    .gallery-wrapper img {
+        width: 93%;
+        height: auto;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+}
+
+/* CENTERS ALL SECTIONS IN MOBILE */
+@media screen and (max-width: 480px) {
+
+    .about-header,
+    .about-bg,
+    .overlay,
+    .about-content,
+    .about-desc,
+    .about-stats,
+    .gallery-section,
+    .gallery-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 430px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .about-stats {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        padding: 15px 10px;
+        width: 100%;
+        max-width: 390px;
+        margin-top: 26px;
+        border-radius: 15px;
+    }
+
+        .stat-box {
+        text-align: center;
+        flex: 1;
+    }
+
+    .stat-box h3 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .stat-box p {
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .divider {
+        width: 1px;
+        height: 30px;
+        background: white;
+    }
+
+    .gallery-section h2 {
+        font-size: 25px;
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+
+    .gallery-section .underline {
+        width: 50   px;
+        height: 2px;
+        background: black;
+        margin: 10px auto 40px auto;
+    }
+
 }
