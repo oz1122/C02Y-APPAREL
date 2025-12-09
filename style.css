@@ -1,4 +1,4 @@
-    /* HERO */
+ /* HERO */
     .hero{
         position:relative;
         height:110vh;
@@ -186,7 +186,7 @@
     /* ===== ABOUT SECTION ===== */
     .about {
         background: #ffffff;
-        padding-bottom: 170px;
+        padding-bottom: 62px;
     }
 
     .about h2 {
@@ -421,3 +421,355 @@
         animation: fadeUp 1s ease-out forwards;
     }
 
+
+/* ======= MOBILE HERO SECTION (≤480px) ======= */
+@media (max-width: 480px) {
+    
+    .hero {
+        height: auto;
+        top: 0;
+        padding-bottom: 462px;
+    }
+
+    .title {
+        font-size: 32px;
+        letter-spacing: 12px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 190px;
+        position: absolute;
+        top: 8px;
+        left: 23px;
+        z-index: 10;
+    }
+
+    /* QUALITY BOX */
+    .quality-box {
+        width: 103px;
+        height: 65px;
+        top: 86px;
+        left: 20px;
+    }
+
+    .quality-inner {
+        width: 86px;
+        height: 53px;
+        padding-top: 5px;
+    }
+
+    .q-main {
+        font-size: 11px;
+        letter-spacing: .3px;
+    }
+
+    .q-sub {
+        font-size: 6px;
+        line-height: 8px;
+        letter-spacing: .3px;
+    }
+
+    /* TEXT AREA RIGHT */
+    .hero-text {
+        position: absolute;
+        width: 200px;
+        top: 60px;
+        left: 180px;
+        text-align: left;
+    }
+
+    .hero-text h2 {
+        font-size: 14px;
+        letter-spacing: 2.1px;
+        margin-left: 39px;
+    }
+
+    .hero-text p {
+        font-size: 11px;
+        line-height: 14px;
+        margin-top: 2px;
+        margin-left: 38px;
+        letter-spacing: 2px;
+        width: 197px;
+    }
+
+    /* BUTTONS */
+    .hero-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 13px;
+        margin-left: 38px;
+    }
+
+    .btn-order,
+    .btn-catalog {
+        padding: 3px 21px;
+        font-size: 11px;
+    }
+
+    /* SUB HERO */
+    .hero-sub {
+          position: absolute;
+          right: 150px;
+          width: 200px;
+          height: 120px;
+          flex-direction: column;
+          margin-top: 90px;
+          gap: 6px;
+    }
+
+@media (max-width: 480px) {
+    }
+    .desc {
+        width: 164px;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 1.1px;
+        margin-left: -7px !important;
+        margin-top: -48px !important;
+        text-align: left;
+    }
+
+    .new-collection-wrapper {
+        width: 161px;
+        height: 115px;
+        left: 200px;
+        top: -105px;
+    }
+
+    .new-collection-box {
+        width: 161px;
+        height: 115px;
+        top: 0px;
+    }
+
+    .new-collection-text {
+        font-size: 7px;
+        top: 8px;
+        left: 10px;
+        letter-spacing: 1px;
+    }
+
+    .collection-img {
+        width: 122px;
+        height: 167px;
+        left: 50px;
+        top: -35px;
+    }
+
+    /* SCROLL TEXT */
+    .scroll {
+        top: 405px;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 4px;
+    }
+
+    .scroll span {
+        font-size: 14px;
+    }
+
+    .scroll-icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+/* ========================================================
+   RESPONSIVE MOBILE ADDITION (TAMBAHAN BARU)
+   ======================================================== */
+@media (max-width: 480px) {
+
+    /* RESET POSITION ABSOLUTE BERISIKO TABRAKAN */
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    /* ================= ABOUT ================= */
+    .about h2 {
+        font-size: 16px;
+        position: relative;
+        top: 13px;
+        left: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        gap: 0;
+    }
+
+    .about-container img {
+        width: 323px;
+        height: auto;
+        margin: auto;
+    }
+
+    .about-container p {
+        width: 323px;
+        height: 90px;
+        text-align: center;
+        left: 0;
+        top: 0;
+        margin-top: 7px;
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 15px;
+    }
+
+    /* ================= BENEFITS ================= */
+    .benefits {
+        padding: 30px 15px;
+    }
+
+    .benefit-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .benefit-subtitle {
+        font-size: 10px;
+        line-height: 14px;
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    /* Grid jadi 2 kolom */
+    .benefit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 25px;
+        justify-items: center;
+    }
+
+    .benefit-item {
+        text-align: center;
+        padding: 5px;
+    }
+
+    /* Icon kecil */
+    .benefit-item img {
+        width: 35px;
+        margin-bottom: 5px;
+    }
+
+    /* Judul tebal, agak besar */
+    .benefit-item h3 {
+        font-size: 10px;
+        font-weight: 700;
+        margin-bottom: 2px;
+        letter-spacing: 0.5px;
+    }
+
+    /* Text kecil */
+    .benefit-item p {
+        font-size: 7px;
+        line-height: 10px;
+        width: 90%;
+        margin: 0 auto;
+        letter-spacing: 0.35px;
+    }
+
+    /* ================= CATALOG ================= */
+    .catalog {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .catalog h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Grid tetap 3 item, tapi lebih kecil */
+    .catalog-grid {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .catalog-item img {
+        width: 90px;
+        height: auto;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+
+    /* Tombol More */
+    .catalog-more {
+        background: #E3EA58;
+        font-size: 12px;
+        padding: 8px 25px;
+        border-radius: 6px;
+        margin-top: 10px;
+        box-shadow: 0px 2px 6px rgba(0,0,0,.25);
+    }
+
+
+    /* ================= CTA ================= */
+    .cta {
+        width: 90%;
+        padding: 20px 12px;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+
+    .cta-container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .cta h2 {
+        font-size: 18px;
+        margin-bottom: 6px;
+        letter-spacing: 0.5px;
+    }
+
+    .cta p {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 10px;
+    }
+
+    .cta-btn {
+        background: #E3EA58;
+        padding: 4px 12px;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 4px;
+        margin-top: 5px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+    }
+
+    /* Popup pilihan kontak */
+    .contact-options {
+        gap: 5px;
+        margin-top: 8px;
+    }
+
+    .contact-btn {
+        width: 150px;
+        font-size: 9px;
+        padding: 6px 12px;
+        border-radius: 4px;
+    }
+}
