@@ -1,7 +1,8 @@
+/* ================= FOOTER DESKTOP ================= */
 
 .footer-info {
     width: 100%;
-    background: #F2F0F0;
+    background: #212121;
     padding: 60px 120px;
 }
 
@@ -32,6 +33,7 @@
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    color: #fff;
 }
 
 .footer-title-group h3 {
@@ -47,18 +49,19 @@
     font-size: 15px;
     font-family: Poppins, sans-serif;
     line-height: 23px;
+    color: #fff;
 }
 
 .footer-center {
     display: flex;
     flex-direction: column;
-    gap: 18px; 
+    gap: 18px;
 }
 
 .footer-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* jarak ikon dan teks */
+    gap: 15px;
 }
 
 .footer-item img {
@@ -70,12 +73,13 @@
     font-size: 16px;
     font-weight: 500;
     margin: 0;
+    color: #fff;
 }
 
 .footer-divider {
     width: 1px;
     height: 200px;
-    background: #212121;
+    background: #111111;
 }
 
 .footer-btn {
@@ -89,7 +93,8 @@
 .footer-btn:hover {
     text-decoration: underline;
 }
-/* COPYRIGHT TEXT */
+
+/* COPYRIGHT */
 .copyright {
     width: 100%;
     text-align: center;
@@ -100,4 +105,89 @@
     font-weight: 400;
     line-height: 20px;
     background: #fff;
+}
+
+
+/* ===================================================
+   FOOTER MOBILE VERSION (≤480px)
+   =================================================== */
+
+@media (max-width: 480px) {
+
+    .footer-info {
+        padding: 25px 15px;
+    }
+
+    /* Grid collapse menjadi kolom */
+    .footer-container {
+        gap: 18px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Logo & teks */
+    .footer-left {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .footer-row {
+        justify-content: center;
+    }
+
+    .footer-logo {
+        width: 30px;
+    }
+
+    .footer-title-group h3 {
+        font-size: 14px;
+    }
+
+    .footer-desc {
+        font-size: 9px;
+        line-height: 12px;
+        width: 132px;
+        margin: 0 auto;
+    }
+
+
+    .footer-divider {
+        height: 100px;
+    }
+
+    /* Center align utk icon+teks */
+    .footer-center {
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .footer-item {
+        gap: 6px;
+    }
+
+    .footer-item img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .footer-item p {
+        font-size: 9px;
+        line-height: 11px;
+        width: 192px;
+    }
+
+    /* Tombol kanan */
+    .footer-btn {
+        font-size: 11px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    /* Copyright */
+    .copyright {
+        font-size: 8px;
+        padding: 8px 0;
+        line-height: 12px;
+    }
 }
