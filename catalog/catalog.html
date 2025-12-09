@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="catalog.css">
     <link rel="stylesheet" href="../navbar.css">
     <link rel="stylesheet" href="../footer.css">
+    <script src="../menu.js"></script>
 </head>
 <body>
 
@@ -17,6 +18,14 @@
             <span class="logo-main">C02Y</span><br>
             <span class="logo-sub">APPAREL</span>
         </div>
+    </div>
+
+
+            <!-- HAMBURGER MENU -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
     <nav class="menu">
@@ -37,78 +46,88 @@
 
 <section class="catalog-section">
     <div class="catalog-container">
-        <div class="catalog-item"><img src="../asset/catalog1.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog2.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog3.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog4.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog5.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog6.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog7.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog8.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog9.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog10.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog11.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog12.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog13.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog14.png"></div>
-        <div class="catalog-item"><img src="../asset/catalog15.png"></div>
+        
+        <!-- SETIAP IMG ADA onclick() -->
+        <div class="catalog-item"><img src="../asset/catalog1.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog2.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog3.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog4.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog5.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog6.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog7.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog8.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog9.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog10.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog11.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog12.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog13.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog14.png" onclick="openModal(this.src)"></div>
+        <div class="catalog-item"><img src="../asset/catalog15.png" onclick="openModal(this.src)"></div>
     </div>
 </section>
 
 
 <footer class="footer-info">
     <div class="footer-container">
-
         <!-- KIRI -->
-<div class="footer-left">
-
-    <div class="footer-row">
-        <img src="../asset/logo.png" class="footer-logo" alt="Cozy Apparel Logo">
-
-        <div class="footer-title-group">
-            <h3>C02Y</h3>
-            <h3>APPAREL</h3>
+        <div class="footer-left">
+            <div class="footer-row">
+                <img src="../asset/f-logo.png" class="footer-logo" alt="Cozy Apparel Logo">
+                <div class="footer-title-group">
+                    <h3>C02Y</h3>
+                    <h3>APPAREL</h3>
+                </div>
+            </div>
+            <p class="footer-desc">
+                Setiap detail di C02Y Apparel dirancang untuk memberikan pengalaman berpakaian yang lebih baik.
+            </p>
         </div>
-    </div>
-
-    <p class="footer-desc">
-        Setiap detail di C02Y Apparel dirancang untuk memberikan pengalaman berpakaian yang lebih baik.
-    </p>
-
-</div>
-
 
         <div class="footer-divider"></div>
 
         <!-- TENGAH -->
         <div class="footer-center">
-    <div class="footer-item">
-        <img src="../asset/ic-lokasi.png" alt="">
-        <p>Kuningan, Jawa Barat, Indonesia</p>
-    </div>
-
-    <div class="footer-item">
-        <img src="../asset/ic-ig.png" alt="">
-        <p>@c02y.apparel</p>
-    </div>
-
-    <div class="footer-item">
-        <img src="../asset/ic-wa.png" alt="">
-        <div>
-            <p>+62 814-6114-3729</p>
-            <p>+62 895-6024-62626</p>
+            <div class="footer-item">
+                <img src="../asset/ic-lokasi.png" alt="">
+                <p>Kuningan, Jawa Barat, Indonesia</p>
+            </div>
+            <div class="footer-item">
+                <img src="../asset/ic-ig.png" alt="">
+                <p>@c02y.apparel</p>
+            </div>
+            <div class="footer-item">
+                <img src="../asset/ic-wa.png" alt="">
+                <div>
+                    <p>+62 814-6114-3729</p>
+                    <p>+62 895-6024-62626</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-
 
         <div class="footer-divider"></div>
-
     </div>
 </footer>
-    <div class="copyright">
-        © 2024 cozy.apparel. All Rights Reserved.
-    </div>
+
+<div class="copyright">
+    © 2024 cozy.apparel. All Rights Reserved.
+</div>
+
+<!-- FULLSCREEN MODAL -->
+<div id="img-modal">
+    <span onclick="closeModal()">&times;</span>
+    <img id="modal-img" src="">
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("modal-img").src = src;
+    document.getElementById("img-modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("img-modal").style.display = "none";
+}
+</script>
+
 </body>
 </html>
-
