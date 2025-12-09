@@ -138,3 +138,24 @@
         border-radius: 12px;
     }
 }
+
+@media(max-width: 480px) {
+    .overlay, 
+    .catalog-bg
+    {
+        height: 98px;
+        width: 360px;
+    }
+
+    .catalog-header h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .catalog-header {
+        height: 98px;
+        width: 360px;
+    }
+}
+
+
