@@ -139,7 +139,7 @@
     }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 360px) {
     .overlay, 
     .catalog-bg
     {
@@ -157,5 +157,6 @@
         width: 360px;
     }
 }
+
 
 
