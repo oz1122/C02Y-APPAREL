@@ -178,3 +178,210 @@
 }
 
 
+@media  (max-width: 480px) {
+
+    .price-list h2{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .price-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-jersey {
+    width: 250px;
+    margin-left: 15px;
+    }
+
+    .pricetag img {
+        width: 415px;
+        height: 422px;
+        margin-top: 309px;
+        margin-left: -50px;
+    }
+
+    .pricetag.left img{
+        margin-left: 4px;
+    }
+
+    .price-header h3{
+        font-size: 25px;
+    }
+
+    .price-header span{
+        font-size: 25px;
+    }
+
+    .price-row.reverse {
+        flex-direction: row;
+    }
+
+    .price-card ul li{
+        font-size: 20px;
+        max-width: 230px;
+    }
+
+    .price-header {
+        display: block;
+        justify-content: center;
+    }
+
+    .price-card{
+        margin-left: -350px;
+        margin-top: -23px;
+        max-width: 430px;
+    }
+
+    .price-header.left{
+        margin-left: 111px;
+    }
+
+    .price-card.left ul{
+        margin-left: 111px;
+        width: 230px;
+    }
+
+    .price-card.left{
+        margin-top: 372px;
+        max-width: 430px;
+    }
+
+   
+/*SIZE CHART*/
+    .size-chart-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .size-chart-img {
+        width: 430px;
+    }
+
+    .size-chart-section{
+        padding: 8px 7px
+    }
+
+    .size-text h2 {
+        font-size: 40px;
+    }
+
+    .collar-image{
+        width: 80%;
+    }
+
+    .collar-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media  (max-width: 360px) {
+
+    .price-list h2{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .price-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-jersey {
+    width: 250px;
+    margin-left: -15px;
+    }
+
+    .custom-price p{
+        width: 250px;
+        margin-left: -50px;
+    }
+
+    .custom-price h3{
+        width: 250px;
+        margin-left: -50px;
+    }
+
+    .pricetag img {
+        width: 360px;
+        height: 422px;
+        margin-top: 309px;
+        margin-left: -50px;
+    }
+
+    .pricetag.left img{
+        margin-left: 4px;
+    }
+
+    .price-header h3{
+        font-size: 25px;
+    }
+
+    .price-header span{
+        font-size: 25px;
+    }
+
+    .price-row.reverse {
+        flex-direction: row;
+    }
+
+    .price-card ul li{
+        font-size: 20px;
+        max-width: 230px;
+    }
+
+    .price-header {
+        display: block;
+        justify-content: center;
+    }
+
+    .price-card{
+        margin-left: -350px;
+        margin-top: -23px;
+        max-width: 360px;
+    }
+
+    .price-header.left{
+        margin-left: 111px;
+    }
+
+    .price-card.left ul{
+        margin-left: 111px;
+        width: 230px;
+    }
+
+    .price-card.left{
+        margin-top: 372px;
+        max-width: 360px;
+    }
+
+   
+/*SIZE CHART*/
+    .size-chart-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .size-chart-img {
+        width: 360px;
+    }
+
+    .size-chart-section{
+        padding: 8px 7px
+    }
+
+    .size-text h2 {
+        font-size: 40px;
+    }
+
+    .collar-image{
+        width: 80%;
+    }
+
+    .collar-section h2 {
+        font-size: 30px;
+    }
+}
