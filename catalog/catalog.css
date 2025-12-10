@@ -55,6 +55,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #E6EFAE;
 }
 
 .catalog-item img {
@@ -157,6 +158,7 @@
         width: 360px;
     }
 }
+
 
 
 
