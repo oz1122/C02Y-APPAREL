@@ -278,6 +278,8 @@
         max-width: 390px;
         margin-top: 26px;
         border-radius: 15px;
+        color: black;
+        background: #E6EFAE;
     }
 
         .stat-box {
@@ -300,7 +302,7 @@
     .divider {
         width: 1px;
         height: 30px;
-        background: white;
+        background: black;
     }
 
     .gallery-section h2 {
